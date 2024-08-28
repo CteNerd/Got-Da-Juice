@@ -1,0 +1,21 @@
+.product-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Knewwave2', sans-serif;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}

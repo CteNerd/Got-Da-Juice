@@ -1,0 +1,13 @@
+.button {
+    background-color: #00a676;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Knewwave2';
+}
+
+.button:hover {
+    background-color: #007b54;
+}
