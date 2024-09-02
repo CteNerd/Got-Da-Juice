@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './ProductList.css';
 
 const ProductList = ({ products }) => {
-    const [activeTab, setActiveTab] = React.useState('Best Sellers');
+    const [activeTab, setActiveTab] = useState('Best Sellers');
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const tabs = ['Best Sellers', 'Got Da Juice', 'Immune System Boost', 'Reboot'];
+
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const filteredProducts = React.useMemo(() => {
         if (activeTab === 'Best Sellers') {
@@ -16,15 +23,29 @@ const ProductList = ({ products }) => {
     return (
         <div className="product-list">
             <div className="tabs">
-                {tabs.map((tab) => (
-                    <button
-                        key={tab}
-                        className={`tablinks ${activeTab === tab ? 'active' : ''}`}
-                        onClick={() => setActiveTab(tab)}
+                {windowWidth > 768 ? (
+                    tabs.map((tab) => (
+                        <button
+                            key={tab}
+                            className={`tablinks ${activeTab === tab ? 'active' : ''}`}
+                            onClick={() => setActiveTab(tab)}
+                        >
+                            {tab}
+                        </button>
+                    ))
+                ) : (
+                    <select
+                        value={activeTab}
+                        onChange={(e) => setActiveTab(e.target.value)}
+                        className="tab-dropdown"
                     >
-                        {tab}
-                    </button>
-                ))}
+                        {tabs.map((tab) => (
+                            <option key={tab} value={tab}>
+                                {tab}
+                            </option>
+                        ))}
+                    </select>
+                )}
             </div>
             <div className="product-grid">
                 {filteredProducts.map((product, index) => (

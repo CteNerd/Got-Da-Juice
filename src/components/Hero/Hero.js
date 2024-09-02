@@ -2,14 +2,14 @@ import React from 'react';
 import './Hero.css';
 
 
-const Hero = ({heroImg, heroImgTxt = true}) => {
+const Hero = ({heroImg, heroImgTxt = true, displayCtaBtn = false}) => {
 
     return (
         <section className={heroImg.includes('Green Juice Blended') ? 'hero-green-juice-blended' : 'hero-juice-set'}>
-            <div className="hero-content">
-                <h2 style={heroImgTxt ? {display: ''} : {display: 'none'}}>More than a juice bar. A vibrant Jersey City experience.</h2>
+            <div className="hero-text">
+                <h1 style={heroImgTxt ? {display: ''} : {display: 'none'}}>More than a juice bar. A vibrant Jersey City experience.</h1>
                 <a style={heroImgTxt ? {display: ''} : {display: 'none'}} href="tel:+12012738227" className="phone-number">(201) 273-8227</a>
-                <button className="cta-button">Order Now</button>
+                <button style={displayCtaBtn ? {display: ''} : {display: 'none'}} className="cta-button">Order Now</button>
             </div>
         </section>
     );

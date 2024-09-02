@@ -96,10 +96,6 @@ button.prev:hover, button.next:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .testimonial-carousel {
-        width: 100%;
-    }
-
     .testimonial-card img {
         width: 60px;
         height: 60px;
