@@ -2,3 +2,20 @@ body {
     text-align: center;
     font-family: 'Knewwave2', sans-serif;
 }
+
+.first-hero {
+    background-image: url('../../assets/images/Green\ Juice\ Blended.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.second-hero {
+    background-image: url('../../assets/images/Three\ Juice\ Set\ \(Profile\).png');
+}

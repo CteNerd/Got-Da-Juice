@@ -12,7 +12,9 @@ const Header = () => {
     return (
         <header className="header">
             <div className="logo-container">
-                <img src={Logo} alt="Logo" className="logo" />
+                <a href='/'>
+                    <img src={Logo} alt="Logo" className="logo" />
+                </a>
             </div>
             <div className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                 <div className="bar"></div>
@@ -21,10 +23,12 @@ const Header = () => {
             </div>
             <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#juice-club">Juice Club</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="https://www.toasttab.com/got-da-juice-309-pacific-ave/rewardsLookup">Juice Club</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
                 </ul>
             </nav>
             <div className={`overlay ${isMenuOpen ? 'overlay-active' : ''}`} onClick={toggleMenu}></div>
