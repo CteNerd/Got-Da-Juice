@@ -25,6 +25,7 @@ import BlackMagicProfile from "../../assets/images/Black Mamba (profile).png"
 import FujiGoddessNutrition from "../../assets/images/Fuji Goddess Nutrition.jpg"
 import JuiceSetProfile from "../../assets/images/The Juice Set (Profile).jpg"
 import GreenJuiceBlended from "../../assets/images/Green Juice Blended.png"
+import './Home.css'
 
 function Home() {
     const products = [
@@ -42,12 +43,12 @@ function Home() {
     return (
         <div className="App">
             <Header />
-            <Hero heroImg="Green Juice Blended" displayCtaBtn={true}/>
+            <Hero className="first-hero" displayCtaBtn={true} displayHeroTxt={true}/>
             <SectionTitle title="We Got Da Juices" />
             <JuiceImageGrid />
             <SectionTitle title="Shop Our Juices" />
             <ProductList products={products} />
-            <Hero heroImg={"Juice Set"} heroImgTxt={false} />
+            <Hero className="second-hero" heroImgTxt={false} />
             <FeatureIcons />
             <SectionTitle title="What Our Customers Say" />
             <Testimonials />

@@ -1,0 +1,13 @@
+.about-hero {
+    background-image: url('../../assets/images/AboutUsOwner.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+

@@ -1,6 +1,5 @@
 .hero {
     position: relative;
-    background-image: url('../../assets/images/Green\ Juice\ Blended.png');
     background-size: cover;
     background-position: center;
     height: 100vh; /* Full height of the viewport */
@@ -29,32 +28,6 @@
     font-size: 16px; /* Adjust font size for mobile */
     margin-bottom: 20px;
     color: white;
-}
-
-.hero-green-juice-blended {
-    background-image: url('../../assets/images/Green\ Juice\ Blended.png');
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.hero-juice-set {
-    background-image: url('../../assets/images/The\ Juice\ Set\ \(Profile\).jpg');
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 20px;
 }
 
 h2 {
