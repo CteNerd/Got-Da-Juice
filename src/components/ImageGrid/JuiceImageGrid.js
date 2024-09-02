@@ -1,10 +1,10 @@
 import React from 'react';
 import './JuiceImageGrid.css';
 import OwnerGUS from '../../assets/images/Owner GUS.jpg'
-import GreenMagicProfile from '../../assets/images/Green Magic (Profile).jpg'
-import ThreeJuiceSetProfile from '../../assets/images/Three Juice Set (Profile).jpg'
-import BeetJuiceProfile from '../../assets/images/Beet Juice (Profile).jpg'
-import CarrotJuiceProfile from '../../assets/images/Carrot Juice (Profile).jpg'
+import GreenMagicProfile from '../../assets/images/Green Magic (Profile).png'
+import ThreeJuiceSetProfile from '../../assets/images/Three Juice Set (Profile).png'
+import BeetJuiceProfile from '../../assets/images/Beet Juice (Profile).png'
+import CarrotJuiceProfile from '../../assets/images/Carrot Juice (Profile).png'
 
 const images = [
     { src: OwnerGUS, alt: 'Juice Image 1' },
