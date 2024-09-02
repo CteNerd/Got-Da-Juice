@@ -99,7 +99,7 @@ h2 {
     }
 
     .hero h1 {
-        font-size: 32px; /* Larger font size on larger screens */
+        font-size: 40px; /* Larger font size on larger screens */
     }
 
     .hero a {
@@ -109,5 +109,10 @@ h2 {
 
     .cta-button {
         width: auto; /* Reset button width on larger screens */
+        display: inherit;
+    }
+
+    .hero-text {
+        text-align: -webkit-center;
     }
 }
