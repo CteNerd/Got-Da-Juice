@@ -44,6 +44,15 @@
 .footer-column ul {
     list-style-type: none;
     padding: 0;
+    display: block; /* Hide the list by default */
+}
+
+.footer-column.active ul {
+    display: block; /* Show the list when the column is active */
+}
+
+.footer-column h4 {
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
 }
 
 .footer-column ul li {
@@ -83,6 +92,14 @@
 
     .footer-column {
         margin-right: 0;
+    }
+
+    .footer-column ul {
+        display: none;
+    }
+
+    .footer-column.active ul {
+        display: block; /* Show the list when the column is active on mobile */
     }
 
     .footer-bottom {
