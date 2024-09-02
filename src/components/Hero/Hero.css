@@ -1,14 +1,16 @@
 .hero {
     position: relative;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-    height: 100vh; /* Full height of the viewport */
+    min-height: 20vh; /* Full height of the viewport */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
     padding: 20px; /* Add some padding for smaller screens */
+    overflow: hidden;
 }
 
 .hero-text {
