@@ -42,7 +42,7 @@ function Home() {
     return (
         <div className="App">
             <Header />
-            <Hero heroImg="Green Juice Blended"/>
+            <Hero heroImg="Green Juice Blended" displayCtaBtn={true}/>
             <SectionTitle title="We Got Da Juices" />
             <JuiceImageGrid />
             <SectionTitle title="Shop Our Juices" />

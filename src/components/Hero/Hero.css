@@ -20,12 +20,12 @@
     font-family: 'Knewwave2', sans-serif;
 }
 
-.hero h1 {
+.hero-text h1 {
     font-size: 24px; /* Adjust font size for mobile */
     margin-bottom: 10px;
 }
 
-.hero a {
+.hero-text a {
     font-size: 16px; /* Adjust font size for mobile */
     margin-bottom: 20px;
     color: white;
@@ -98,11 +98,11 @@ h2 {
         padding: 0; /* Remove padding on larger screens */
     }
 
-    .hero h1 {
+    .hero-text h1 {
         font-size: 40px; /* Larger font size on larger screens */
     }
 
-    .hero a {
+    .hero-text a {
         font-size: 18px; /* Larger font size on larger screens */
         color: white;
     }
