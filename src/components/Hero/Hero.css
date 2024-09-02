@@ -1,3 +1,36 @@
+.hero {
+    position: relative;
+    background-image: url('../../assets/images/Green\ Juice\ Blended.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px; /* Add some padding for smaller screens */
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%; /* Ensure the text block doesn't overflow */
+    font-family: 'Knewwave2', sans-serif;
+}
+
+.hero h1 {
+    font-size: 24px; /* Adjust font size for mobile */
+    margin-bottom: 10px;
+}
+
+.hero a {
+    font-size: 16px; /* Adjust font size for mobile */
+    margin-bottom: 20px;
+    color: white;
+}
+
 .hero-green-juice-blended {
     background-image: url('../../assets/images/Green\ Juice\ Blended.png');
     background-size: cover;
@@ -43,12 +76,38 @@ h2 {
 }
 
 .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #00a676;
     color: white;
-    border: none;
-    padding: 15px 30px;
-    cursor: pointer;
-    font-size: 20px;
-    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px; /* Adjust font size for mobile */
+    width: 80%; /* Button width on mobile */
+    max-width: 300px; /* Limit the button width on larger screens */
     font-family: 'Knewwave2', sans-serif;
+}
+
+.cta-button:hover {
+    background-color: #008c5e;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 60vh; /* Adjust height for larger screens */
+        padding: 0; /* Remove padding on larger screens */
+    }
+
+    .hero h1 {
+        font-size: 32px; /* Larger font size on larger screens */
+    }
+
+    .hero a {
+        font-size: 18px; /* Larger font size on larger screens */
+        color: white;
+    }
+
+    .cta-button {
+        width: auto; /* Reset button width on larger screens */
+    }
 }
