@@ -7,6 +7,7 @@ import '../src/styles/global.css'
 import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 import Menu from './pages/Menu/Menu';
+import Contact from './pages/Contact/Contact';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/" element={<Home />} />
         </Routes>
