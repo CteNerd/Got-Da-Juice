@@ -1,6 +1,6 @@
 import React from 'react';
 import './JuiceImageGrid.css';
-import OwnerGUS from '../../assets/images/Owner GUS.jpg'
+import OwnerGUS from '../../assets/images/Owner GUS.png'
 import GreenMagicProfile from '../../assets/images/Green Magic (Profile).png'
 import ThreeJuiceSetProfile from '../../assets/images/Three Juice Set (Profile).png'
 import BeetJuiceProfile from '../../assets/images/Beet Juice (Profile).png'

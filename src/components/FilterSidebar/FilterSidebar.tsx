@@ -18,11 +18,11 @@ const FilterSidebar: React.FC<{ onFilterChange: (event: React.ChangeEvent<HTMLIn
                 <li>
                     <input 
                         type="checkbox" 
-                        id="bowls" 
-                        value="bowls" 
+                        id="food" 
+                        value="food" 
                         onChange={onFilterChange} 
                     />
-                    <label htmlFor="bowls">Bowls</label>
+                    <label htmlFor="food">Food</label>
                 </li>
                 <li>
                     <input 
@@ -32,6 +32,33 @@ const FilterSidebar: React.FC<{ onFilterChange: (event: React.ChangeEvent<HTMLIn
                         onChange={onFilterChange} 
                     />
                     <label htmlFor="swag">Swag</label>
+                </li>
+                <li>
+                    <input 
+                        type="checkbox" 
+                        id="cleanse" 
+                        value="cleanse" 
+                        onChange={onFilterChange} 
+                    />
+                    <label htmlFor="cleanse">Cleanse</label>
+                </li>
+                <li>
+                    <input 
+                        type="checkbox" 
+                        id="shakes" 
+                        value="shakes" 
+                        onChange={onFilterChange} 
+                    />
+                    <label htmlFor="shakes">Shakes</label>
+                </li>
+                <li>
+                    <input 
+                        type="checkbox" 
+                        id="shots" 
+                        value="shots" 
+                        onChange={onFilterChange} 
+                    />
+                    <label htmlFor="shots">Shots</label>
                 </li>
             </ul>
         </aside>
