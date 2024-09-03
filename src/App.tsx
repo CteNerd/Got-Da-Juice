@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import '../src/styles/global.css'
 import About from './pages/About/About';
+import Blog from './pages/Blog/Blog';
+import Menu from './pages/Menu/Menu';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/menu" element={<Menu />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </Router>
