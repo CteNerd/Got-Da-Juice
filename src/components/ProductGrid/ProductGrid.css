@@ -1,0 +1,24 @@
+.product-grid-container {
+    margin: 20px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.pagination-controls {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.pagination-controls label {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.pagination-controls select {
+    padding: 5px;
+    font-size: 14px;
+}

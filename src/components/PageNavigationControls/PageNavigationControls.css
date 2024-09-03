@@ -1,0 +1,25 @@
+.page-navigation-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-navigation-controls button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.page-navigation-controls button.active {
+    background-color: #00a676;
+    color: white;
+}
+
+.page-navigation-controls button:disabled {
+    background-color: #f4f4f4;
+    color: #aaa;
+    cursor: not-allowed;
+}
