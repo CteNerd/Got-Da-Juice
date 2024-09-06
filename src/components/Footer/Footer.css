@@ -1,113 +1,113 @@
 .footer {
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 40px 20px;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Knewwave2', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Knewwave2", sans-serif;
 }
 
 .footer-columns {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    justify-content: center; /* Center the navigation items */
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: center; /* Center the navigation items */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-column {
-    flex: 1;
-    margin-right: 20px;
-    margin-bottom: 20px;
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .logo-column {
-    max-width: 150px;
+  max-width: 150px;
 }
 
 .footer-logo {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-column h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .footer-column ul {
-    list-style-type: none;
-    padding: 0;
-    display: block; /* Hide the list by default */
+  list-style-type: none;
+  padding: 0;
+  display: block; /* Hide the list by default */
 }
 
 .footer-column.active ul {
-    display: block; /* Show the list when the column is active */
+  display: block; /* Show the list when the column is active */
 }
 
 .footer-column h4 {
-    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
 }
 
 .footer-column ul li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .footer-column ul li a {
-    color: #333;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
 .footer-column ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #555;
-    padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #555;
+  padding-top: 20px;
 }
 
 .footer-icons a {
-    color: #333;
-    margin-left: 10px;
+  color: #333;
+  margin-left: 10px;
 }
 
 .footer-icons a:hover {
-    color: #00a676;
+  color: #00a676;
 }
 
 @media screen and (max-width: 768px) {
-    .footer-columns {
-        flex-direction: column;
-    }
+  .footer-columns {
+    flex-direction: column;
+  }
 
-    .footer-column {
-        margin-right: 0;
-    }
+  .footer-column {
+    margin-right: 0;
+  }
 
-    .footer-column ul {
-        display: none;
-    }
+  .footer-column ul {
+    display: none;
+  }
 
-    .footer-column.active ul {
-        display: block; /* Show the list when the column is active on mobile */
-    }
+  .footer-column.active ul {
+    display: block; /* Show the list when the column is active on mobile */
+  }
 
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .footer-icons {
-        margin-top: 10px;
-    }
+  .footer-icons {
+    margin-top: 10px;
+  }
 }

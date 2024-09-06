@@ -1,28 +1,27 @@
 .feature-icons {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #f9f9f9;
-    font-family: 'Knewwave2', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: "Knewwave2", sans-serif;
 }
 
 .feature {
-    text-align: center;
+  text-align: center;
 }
 
 .icon {
-    font-size: 24px;
-    display: block;
+  font-size: 24px;
+  display: block;
 }
 
 .feature p {
-    margin-top: 10px;
-    font-size: 16px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 
-
 @media (max-width: 768px) {
-    .feature-icons {
-        display: block;
-    }
+  .feature-icons {
+    display: block;
+  }
 }

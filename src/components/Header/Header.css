@@ -1,129 +1,131 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f4f4f4; /* Light grey background */
-    position: relative;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Knewwave2', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light grey background */
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Knewwave2", sans-serif;
 }
 
 .logo-container {
-    z-index: 1001; /* Keep logo above the overlay */
+  z-index: 1001; /* Keep logo above the overlay */
 }
 
 .logo {
-    max-width: 150px;
+  max-width: 150px;
 }
 
 .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    z-index: 1001; /* Keep hamburger icon above the overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001; /* Keep hamburger icon above the overlay */
 }
 
 .hamburger-menu .bar {
-    height: 3px;
-    background-color: #333;
-    border-radius: 2px;
-    transition: all 0.3s ease;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 .hamburger-menu.open .bar:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
+  transform: rotate(45deg) translateY(8px);
 }
 
 .hamburger-menu.open .bar:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .hamburger-menu.open .bar:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px);
+  transform: rotate(-45deg) translateY(-8px);
 }
 
 .nav {
-    position: fixed;
-    left: -100%;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #fff;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    transition: left 0.3s ease;
-    z-index: 1000;
-    padding-top: 60px; /* Adjust based on the height of your header */
-    justify-content: center; /* Center the navigation items */
-    align-items: center;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 60px; /* Adjust based on the height of your header */
+  justify-content: center; /* Center the navigation items */
+  align-items: center;
 }
 
 .nav-open {
-    left: 0;
+  left: 0;
 }
 
 .nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav ul li {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px 20px;
-    display: block;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  z-index: 999;
 }
 
 .overlay-active {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (min-width: 768px) {
-    .hamburger-menu {
-        display: none;
-    }
+  .hamburger-menu {
+    display: none;
+  }
 
-    .nav {
-        position: static;
-        width: auto;
-        height: auto;
-        box-shadow: none;
-        background-color: transparent;
-        flex-grow: 1; /* Allow the nav to take up remaining space */
-        display: flex;
-        padding-top: 0px; /* Adjust based on the height of your header */
-    }
+  .nav {
+    position: static;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    background-color: transparent;
+    flex-grow: 1; /* Allow the nav to take up remaining space */
+    display: flex;
+    padding-top: 0px; /* Adjust based on the height of your header */
+  }
 
-    .nav ul {
-        display: flex;
-    }
+  .nav ul {
+    display: flex;
+  }
 
-    .nav ul li {
-        margin: 0 20px;
-    }
+  .nav ul li {
+    margin: 0 20px;
+  }
 }
