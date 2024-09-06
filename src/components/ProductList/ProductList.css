@@ -39,6 +39,9 @@
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 .product-item {
@@ -126,12 +129,6 @@
         font-size: 16px;
         font-family: 'Knewwave2', sans-serif;
     }
-}
-
-.product-grid {
-    display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 .product-item {
