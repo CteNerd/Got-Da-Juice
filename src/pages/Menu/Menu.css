@@ -1,21 +1,21 @@
 .products-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .products-content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
-    .products-content {
-        flex-direction: column;
-    }
+  .products-content {
+    flex-direction: column;
+  }
 
-    .filter-sidebar {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
+  .filter-sidebar {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }

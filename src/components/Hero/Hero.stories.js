@@ -1,21 +1,20 @@
-import React from 'react';
-import Hero from './Hero';
+import React from "react";
+import Hero from "./Hero";
 
 export default {
-    title: 'Components/Hero',
-    component: Hero,
-    argTypes: {
-    },
+  title: "Components/Hero",
+  component: Hero,
+  argTypes: {},
 };
 
 const Template = (args) => <Hero {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    heroImg: 'Green Juice Blended'
+  heroImg: "Green Juice Blended",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-    heroImg: 'Soemthing Else'
+  heroImg: "Soemthing Else",
 };

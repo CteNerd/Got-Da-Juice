@@ -1,14 +1,14 @@
 .pagination-controls {
-    margin-top: 20px;
-    text-align: right;
+  margin-top: 20px;
+  text-align: right;
 }
 
 .pagination-controls label {
-    font-size: 14px;
-    margin-right: 10px;
+  font-size: 14px;
+  margin-right: 10px;
 }
 
 .pagination-controls select {
-    padding: 5px;
-    font-size: 14px;
+  padding: 5px;
+  font-size: 14px;
 }

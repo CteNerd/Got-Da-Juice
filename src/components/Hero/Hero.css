@@ -1,93 +1,92 @@
 .hero {
-    position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 20vh; /* Full height of the viewport */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    padding: 20px; /* Add some padding for smaller screens */
-    overflow: hidden;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 20vh; /* Full height of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px; /* Add some padding for smaller screens */
+  overflow: hidden;
 }
 
 .hero-text {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 90%; /* Ensure the text block doesn't overflow */
-    font-family: 'Knewwave2', sans-serif;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%; /* Ensure the text block doesn't overflow */
+  font-family: "Knewwave2", sans-serif;
 }
 
 .hero-text h1 {
-    font-size: 24px; /* Adjust font size for mobile */
-    margin-bottom: 10px;
+  font-size: 24px; /* Adjust font size for mobile */
+  margin-bottom: 10px;
 }
 
 .hero-text a {
-    font-size: 16px; /* Adjust font size for mobile */
-    margin-bottom: 20px;
-    color: white;
-}
-
-h2 {
-    font-size: 70px;
-    line-height: 80px;
-    margin-bottom: 40px;
+  font-size: 16px; /* Adjust font size for mobile */
+  margin-bottom: 20px;
+  color: white;
 }
 
 .hero-content {
-    max-width: 900px;
-    font-family: 'Knewwave2', sans-serif;
+  max-width: 900px;
+  font-family: "Knewwave2", sans-serif;
 }
 
 .hero-content .phone-number {
-    display: block;
-    color: white;
-    font-size: 30px;
-    font-weight: 800;
+  display: block;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #00a676;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px; /* Adjust font size for mobile */
-    width: 80%; /* Button width on mobile */
-    max-width: 300px; /* Limit the button width on larger screens */
-    font-family: 'Knewwave2', sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00a676;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px; /* Adjust font size for mobile */
+  width: 80%; /* Button width on mobile */
+  max-width: 300px; /* Limit the button width on larger screens */
+  font-family: "Knewwave2", sans-serif;
 }
 
 .cta-button:hover {
-    background-color: #008c5e;
+  background-color: #008c5e;
 }
 
 @media (min-width: 768px) {
-    .hero {
-        height: 60vh; /* Adjust height for larger screens */
-        padding: 0; /* Remove padding on larger screens */
-    }
+  .hero {
+    height: 60vh; /* Adjust height for larger screens */
+    padding: 0; /* Remove padding on larger screens */
+  }
 
-    .hero-text h1 {
-        font-size: 40px; /* Larger font size on larger screens */
-    }
+  .hero-text h1 {
+    font-size: 40px; /* Larger font size on larger screens */
+  }
 
-    .hero-text a {
-        font-size: 18px; /* Larger font size on larger screens */
-        color: white;
-    }
+  .hero-text a {
+    font-size: 18px; /* Larger font size on larger screens */
+    color: white;
+  }
 
-    .cta-button {
-        width: auto; /* Reset button width on larger screens */
-        display: inherit;
-    }
+  .cta-button {
+    width: auto; /* Reset button width on larger screens */
+    display: inherit;
+  }
 
-    .hero-text {
-        text-align: -webkit-center;
-    }
+  .hero-text {
+    text-align: -webkit-center;
+  }
 }
