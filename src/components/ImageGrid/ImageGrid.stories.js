@@ -1,6 +1,6 @@
 import React from "react";
 import JuiceImageGrid from "./JuiceImageGrid";
-import OwnerGUS from "../../assets/images/Owner GUS.jpg";
+import OwnerGUS from "../../assets/images/Owner GUS.png";
 
 export default {
   title: "Components/JuiceImageGrid",
