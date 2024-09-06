@@ -8,6 +8,7 @@ import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 import Menu from './pages/Menu/Menu';
 import Contact from './pages/Contact/Contact';
+import BlogPost from './components/BlogPost/BlogPost';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/menu" element={<Menu />} />
