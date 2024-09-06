@@ -47,7 +47,7 @@ const ProductList = ({ products }) => {
                     </select>
                 )}
             </div>
-            <div className="product-grid">
+            <div className="product-list-grid">
                 {filteredProducts.map((product, index) => (
                     <div key={index} className="product-item">
                         <div className="image-container">

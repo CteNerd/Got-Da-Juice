@@ -38,7 +38,7 @@ img {
 
 /* Media Query for Mobile */
 @media (max-width: 768px) {
-    .product-grid {
+    .product-list-grid {
         display: flex !important;
         flex-direction: row; /* Align items horizontally */
         overflow-x: auto; /* Enable horizontal scrolling inside the grid */
@@ -54,7 +54,7 @@ img {
     }
 
     /* Hide scrollbar (optional) */
-    .product-grid::-webkit-scrollbar {
+    .product-list-grid::-webkit-scrollbar {
         display: none;
     }
 }
