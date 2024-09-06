@@ -23,3 +23,10 @@
     padding: 5px;
     font-size: 14px;
 }
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .pagination-controls {
+        text-align: center;
+    }
+}
