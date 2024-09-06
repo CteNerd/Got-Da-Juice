@@ -59,7 +59,11 @@ const ProductList = ({ products }) => {
                     </div>
                 ))}
             </div>
-            <button className="load-more">See All</button>
+            <a  href="/menu">
+                <button className="load-more">
+                    See All
+                </button>
+            </a>
         </div>
     );
 };
