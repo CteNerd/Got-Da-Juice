@@ -23,26 +23,3 @@
     padding: 5px;
     font-size: 14px;
 }
-
-/* Media Query for Mobile */
-@media (max-width: 768px) {
-    .product-grid {
-        display: flex;
-        flex-direction: row; /* Align items horizontally */
-        overflow-x: auto; /* Enable horizontal scrolling inside the grid */
-        gap: 10px;
-        scroll-snap-type: x mandatory; /* Optional: For snapping behavior while scrolling */
-        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on mobile */
-    }
-
-    .product-card {
-        flex: 0 0 auto; /* Prevent product cards from shrinking */
-        width: 80%; /* Adjust the width of each card as per your design */
-        scroll-snap-align: start; /* Optional: Snap to the start of each product card */
-    }
-
-    /* Hide scrollbar (optional) */
-    .product-grid::-webkit-scrollbar {
-        display: none;
-    }
-}
