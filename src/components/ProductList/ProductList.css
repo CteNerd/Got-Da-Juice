@@ -129,6 +129,10 @@
         font-size: 16px;
         font-family: 'Knewwave2', sans-serif;
     }
+
+    .product-grid {
+        max-width: 95vw;
+    }
 }
 
 .product-item {
